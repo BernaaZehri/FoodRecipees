@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="FoodRecipeesPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>BL.User</class>
+    <class>BL.Role</class>
+    <class>BL.Useri</class>
+    <class>BL.IngredientsCategory</class>
+    <class>BL.Difficulty</class>
+    <class>BL.RecipeType</class>
+    <class>BL.CategoryUnit</class>
+    <class>BL.PreparationWay</class>
+    <class>BL.Ingredient</class>
+    <class>BL.Unit</class>
+    <class>BL.Recipe</class>
+    <class>BL.RecipeIngredient</class>
+    <class>BL.RecipeCategory</class>
+    <class>BL.Sysdiagrams</class>
+    <class>BL.IngredientCategory</class>
+    <class>BL.UnitDetails</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=Databaza"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sa"/>
+      
+    </properties>
+  </persistence-unit>
+</persistence>

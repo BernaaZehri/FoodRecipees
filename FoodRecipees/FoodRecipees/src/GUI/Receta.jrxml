@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="1000" pageHeight="592" orientation="Landscape" columnWidth="960" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea93b095-7ff6-499d-9ad0-4d0a49810462">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="1197"/>
+	<property name="ireport.y" value="61"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     Recipe."RecipeID" AS Recipe_RecipeID,
+     Recipe."Title" AS Recipe_Title,
+     Recipe."RecipeNumber" AS Recipe_RecipeNumber,
+     Recipe."CreationDate" AS Recipe_CreationDate,
+     Recipe."RecipeCategoryID" AS Recipe_RecipeCategoryID,
+     Recipe."RecipeTypeID" AS Recipe_RecipeTypeID,
+     Recipe."PreparationWayID" AS Recipe_PreparationWayID,
+     Recipe."CookingTime" AS Recipe_CookingTime,
+     Recipe."Calories" AS Recipe_Calories,
+     Recipe."City" AS Recipe_City,
+     Recipe."UserID" AS Recipe_UserID,
+     Recipe."AuthorComment" AS Recipe_AuthorComment,
+     Recipe."RecipeDescription" AS Recipe_RecipeDescription,
+     Recipe."DifficultyID" AS Recipe_DifficultyID,
+     Recipe."Rating" AS Recipe_Rating
+FROM
+     "dbo"."Recipe" Recipe]]>
+	</queryString>
+	<field name="Recipe_RecipeID" class="java.lang.Integer"/>
+	<field name="Recipe_Title" class="java.lang.String"/>
+	<field name="Recipe_RecipeNumber" class="java.lang.Integer"/>
+	<field name="Recipe_CreationDate" class="java.sql.Date"/>
+	<field name="Recipe_RecipeCategoryID" class="java.lang.Integer"/>
+	<field name="Recipe_RecipeTypeID" class="java.lang.Integer"/>
+	<field name="Recipe_PreparationWayID" class="java.lang.Integer"/>
+	<field name="Recipe_CookingTime" class="java.lang.Integer"/>
+	<field name="Recipe_Calories" class="java.lang.Integer"/>
+	<field name="Recipe_City" class="java.lang.String"/>
+	<field name="Recipe_UserID" class="java.lang.Integer"/>
+	<field name="Recipe_AuthorComment" class="java.lang.String"/>
+	<field name="Recipe_RecipeDescription" class="java.lang.String"/>
+	<field name="Recipe_DifficultyID" class="java.lang.Integer"/>
+	<field name="Recipe_Rating" class="java.lang.Integer"/>
+	<group name="Recipe_RecipeID">
+		<groupExpression><![CDATA[$F{Recipe_RecipeID}]]></groupExpression>
+	</group>
+	<group name="Recipe_Title">
+		<groupExpression><![CDATA[$F{Recipe_Title}]]></groupExpression>
+	</group>
+	<group name="Recipe_RecipeNumber">
+		<groupExpression><![CDATA[$F{Recipe_RecipeNumber}]]></groupExpression>
+	</group>
+	<group name="Recipe_CreationDate">
+		<groupExpression><![CDATA[$F{Recipe_CreationDate}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="320" y="24" width="198" height="55" uuid="9dd5920f-391a-45c0-9e3e-0bfcbfd4373f"/>
+				<textElement textAlignment="Center">
+					<font size="40"/>
+				</textElement>
+				<text><![CDATA[RECIPES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="0" width="21" height="20" uuid="2446b99d-586c-47b8-8268-a10500a0cf58"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="69" height="20" uuid="e0bde02d-ea0a-4a92-a1d3-4738b471b568"/>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="0" width="46" height="20" uuid="d493b60d-e28d-4916-b8c8-607e2ccab842"/>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="1" width="100" height="20" uuid="c9e5bff1-f281-4f1d-989c-48c4e5482c72"/>
+				<text><![CDATA[Creation Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="1" width="100" height="20" uuid="07afa17d-113e-487c-bc5e-65c319810251"/>
+				<text><![CDATA[Category ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="1" width="100" height="20" uuid="db70f718-acd8-4310-9ed6-f6f7299e2471"/>
+				<text><![CDATA[Cooking time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="1" width="100" height="20" uuid="7d84a6d3-1a90-4b2b-954c-39b46b977737"/>
+				<text><![CDATA[Calories]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="0" width="100" height="20" uuid="c7fde2a9-f54f-4d03-987f-dffac1aa90f6"/>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="670" y="1" width="100" height="20" uuid="aabf3947-f03e-44de-841d-c40e2536b283"/>
+				<text><![CDATA[Author Comment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="770" y="1" width="100" height="20" uuid="3c02a32f-cbfb-41a3-a2e6-67c8e33ee58a"/>
+				<text><![CDATA[Difficulty ID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="34" y="0" width="21" height="20" uuid="22538e2e-4145-4876-893d-1c71fd7ba90a"/>
+				<textFieldExpression><![CDATA[$F{Recipe_RecipeID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="69" height="20" uuid="4095cd37-9c41-4868-814d-59823694af1b"/>
+				<textFieldExpression><![CDATA[$F{Recipe_Title}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="-1" width="960" height="2" uuid="0dbd874b-7f79-40eb-9401-145480f20d0f"/>
+			</line>
+			<line>
+				<reportElement x="0" y="20" width="802" height="1" uuid="3ee4a7db-72b5-4c86-9c11-2afdfbd91c39"/>
+			</line>
+			<textField>
+				<reportElement x="124" y="1" width="46" height="20" uuid="9408e9d6-870b-4f6a-86cb-61aa7ff1590c"/>
+				<textFieldExpression><![CDATA[$F{Recipe_RecipeNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="0" width="100" height="20" uuid="13bc7ebd-f9e2-48ba-838c-ecb5ad1b7960"/>
+				<textFieldExpression><![CDATA[$F{Recipe_CreationDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="1" width="100" height="20" uuid="0ae32f74-af79-491e-a3a5-3586d881647b"/>
+				<textFieldExpression><![CDATA[$F{Recipe_RecipeCategoryID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="1" width="100" height="20" uuid="7dbe9eb3-7587-40f5-920e-e975cf9ab2ce"/>
+				<textFieldExpression><![CDATA[$F{Recipe_CookingTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="1" width="100" height="20" uuid="9b2f3a19-7150-4ac7-8077-01bbf363c701"/>
+				<textFieldExpression><![CDATA[$F{Recipe_Calories}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="0" width="100" height="20" uuid="0876f8ba-2352-447d-9c14-95a0458aa156"/>
+				<textFieldExpression><![CDATA[$F{Recipe_City}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="1" width="100" height="20" uuid="afd7fde9-0af5-46d1-99d1-f8546f629fa4"/>
+				<textFieldExpression><![CDATA[$F{Recipe_AuthorComment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="770" y="1" width="100" height="20" uuid="00913954-5c84-4739-8ab4-da66379a4166"/>
+				<textFieldExpression><![CDATA[$F{Recipe_DifficultyID}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="802" y="20" width="158" height="1" uuid="b749742e-bf0a-4972-8dcb-99ed86e1dd45"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="838" y="22" width="100" height="20" uuid="83232b51-1e85-416f-a729-82b582d712cb"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
